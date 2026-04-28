@@ -13,7 +13,9 @@ For this assignment we are choosing a design pattern that we didn't cover in cla
 https://github.com/yutingshi02/cs-665-classproject 
 
 # Implementation Description  
-I am writing an app that students can use to host/find study sessions. You can "sign up", add your classes, and then host/search for study sessions that are coming up that are hosted by classmates. I think I want to have the Delegator do the different tasks: host, find, rsvp to a study session. 
+I am writing an app that students can use to host/find study sessions. You can "sign up", add your classes, and then host/search for study sessions that are coming up that are hosted by classmates. The Delegator will delegate the create, find, and RSVP functions. 
+
+I will also use the Singleton method to have a central database to store all of the study sessions. 
 
 For each assignment, please answer the following:
 

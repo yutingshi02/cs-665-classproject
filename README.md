@@ -1,29 +1,26 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Yuting Shi       |
+| Date         | 04/28/2026               |
+| Course       | Spring   |
+| Assignment # |   class project/final                         |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+For this assignment we are choosing a design pattern that we didn't cover in class. I think I am going to use the Delegation pattern to implement a similar idea I used for a project for another class. 
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/yutingshi02/cs-665-classproject 
 
-# Implementation Description 
-
+# Implementation Description  
+I am writing an app that students can use to host/find study sessions. You can "sign up", add your classes, and then host/search for study sessions that are coming up that are hosted by classmates. I think I want to have the Delegator do the different tasks: host, find, rsvp to a study session. 
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
+- Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+- Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
 - Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
+- If applicable, mention any design patterns you have used and explain why they were chosen.
 
 
 # Maven Commands

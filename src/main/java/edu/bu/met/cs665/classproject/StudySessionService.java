@@ -1,0 +1,34 @@
+package edu.bu.met.cs665.classproject;
+
+import java.util.List;
+
+/*
+main service class that delegates the responsibilities tothe handlers
+*/
+public class StudySessionService {
+
+	private CreateHandler createHandler = new CreateHandler();
+	private FindHandler findHandler = new FindHandler();
+	private RSVPHandler rsvpHandler = new RSVPHandler();
+
+	/*
+	delegates session creation to CreateHandler 
+	*/
+	public void createSession(StudySession session) {
+		createHandler.createSession(session);
+	}
+
+	/*
+	delegates searching to FindHandler using strategy
+	*/
+	public List<StudySession> findSessions(String course) {
+		return findHandler.findSessions(new CourseSearchStrategy(), course);
+	}
+
+	/*
+	delegates RSVP to RSVPHandler
+	*/
+	public void rsvp(StudySession session, String name) {
+		rsvpHandler.rsvp(session, name);
+	}
+}

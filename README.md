@@ -20,10 +20,15 @@ I will also use the Singleton method to have a central database to store all of 
 For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
+Th implementation is pretty flexible because everything is separated into different parts. If I wanted to add new features later, like searching by location or time, I could just add a new search strategy without changing the rest of the code. Similarly, if I wanted to add or remove functionality like RSVP or deletion, I could add or remove a handler class without affecting other parts of the system.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were chosen.
+The code is also simple and easy to understand because each class has one clear job. The service class just delegates work, the handlers each do one specific task (create, find, RSVP, delete), and the database stores the data. The separation makes it easier to read and maintain since you don’t have everything mixed together in one place.
 
+- Describe how you have avoided duplicated code and why it is important.
+I avoided duplicated code by keeping shared logic in one place. All sessions are stored in a single repository, and all operations reuse that instead of creating their own lists. The handlers also reuse existing methods instead of repeating logic. This is important because duplicated code makes programs harder to update and more likely to have bugs
+
+- If applicable, mention any design patterns you have used and explain why they were chosen.
+My program mainly uses the Delegation pattern, where the service class passes work to different handler classes. I also used the Singleton for the repository so all parts of the program share the same data, and the Strategy Pattern for searching so it’s easy to change or add new ways to search sessions.
 
 # Maven Commands
 

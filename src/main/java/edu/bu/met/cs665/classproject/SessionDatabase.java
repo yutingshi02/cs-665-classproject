@@ -42,4 +42,12 @@ public class SessionDatabase {
 	public List<StudySession> getAllSessions() {
 		return sessions;
 	}
+
+    /*
+    removes a session using it ID
+    */
+    public void removeSessionById(int id) {
+        sessions.removeIf(s -> s.getId() == id);
+    }
+    
 }

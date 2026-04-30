@@ -10,6 +10,7 @@ public class StudySessionService {
 	private CreateHandler createHandler = new CreateHandler();
 	private FindHandler findHandler = new FindHandler();
 	private RSVPHandler rsvpHandler = new RSVPHandler();
+    private DeleteHandler deleteHandler = new DeleteHandler();
 
 	/*
 	delegates session creation to CreateHandler 
@@ -31,4 +32,12 @@ public class StudySessionService {
 	public void rsvp(StudySession session, String name) {
 		rsvpHandler.rsvp(session, name);
 	}
+    
+    /*
+    delegates deletion to DeleteHandler
+    */
+    public void deleteSession(int id) {
+        deleteHandler.deleteSession(id);
+    }
+
 }

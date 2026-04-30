@@ -15,6 +15,12 @@ public class StudySession {
 	private String time;
 	private List<String> attendees;
 
+    /*
+    this is for creating IDs so they can b deleted later
+    */
+    private static int counter = 1;
+    private int id;
+
 	/*
 	constructor to create a new study session
 	*/
@@ -24,6 +30,8 @@ public class StudySession {
 		this.location = location;
 		this.time = time;
 		this.attendees = new ArrayList<>();
+        // id is so that each can be deleted later 
+        this.id = counter++;
 	}
 
 	/*
@@ -52,8 +60,15 @@ public class StudySession {
 	*/
 	@Override
 	public String toString() {
-		return course + description + 
+		return course + " " + description + 
             "\nAt " + location + " on " + time + 
 			"\nAttendees: " + attendees + "\n"; 
 	}
+
+    /*
+    returns id 
+    */
+    public int getId() {
+	    return id;
+    }
 }

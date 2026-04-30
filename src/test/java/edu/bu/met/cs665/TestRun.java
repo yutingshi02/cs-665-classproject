@@ -1,7 +1,6 @@
 package edu.bu.met.cs665;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 import edu.bu.met.cs665.classproject.*;
 import java.util.List;
@@ -24,7 +23,7 @@ public class TestRun {
 		// search sessions by course
 		List<StudySession> sessions = service.findSessions("CS665");
 
-		System.out.println("CS665 Sessions:");
+		System.out.println("CS665 Sessions:\n");
 		for (StudySession s : sessions) {
 			System.out.println(s);
 		}
@@ -35,7 +34,18 @@ public class TestRun {
 			service.rsvp(sessions.get(0), "Lola");
 		}
 
-		System.out.println("\nAfter RSVP:");
+		System.out.println("\nAfter RSVP:\n");
 		System.out.println(sessions.get(0));
+
+        // delete a session for now just deleting th first one but can specify id later
+        if (!sessions.isEmpty()) {
+            service.deleteSession(sessions.get(0).getId());
+        }
+
+        System.out.println("\nAfter deletion:\n");
+        List<StudySession> updated = service.findSessions("CS665");
+        for (StudySession s : updated) {
+            System.out.println(s);
+        }
 	}
 }

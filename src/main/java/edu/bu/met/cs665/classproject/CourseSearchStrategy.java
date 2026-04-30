@@ -3,9 +3,19 @@ package edu.bu.met.cs665.classproject;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-the concrete strategy to search sessions by course
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: CourseSearchStrategy.java
+
+ * Description: the concrete strategy to search sessions by course
 */
+
 public class CourseSearchStrategy implements SearchStrategy {
 
 	/*

@@ -3,8 +3,17 @@ package edu.bu.met.cs665.classproject;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-database/repository that stores all study sessions, using the singleton method here
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: SessionDatabase.java
+
+ * Description: database/repository that stores all study sessions, using the singleton method here
 */
 public class SessionDatabase {
 

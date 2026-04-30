@@ -2,8 +2,17 @@ package edu.bu.met.cs665.classproject;
 
 import java.util.List;
 
-/*
-main service class that delegates the responsibilities tothe handlers
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: StudySessionService.java
+
+ * Description: main service class that delegates the responsibilities tothe handlers
 */
 public class StudySessionService {
 
@@ -16,7 +25,7 @@ public class StudySessionService {
 	delegates session creation to CreateHandler 
 	*/
 	public void createSession(StudySession session) {
-		createHandler.createSession(session);
+		createHandler.createSession(session); 
 	}
 
 	/*

@@ -1,7 +1,16 @@
 package edu.bu.met.cs665.classproject;
 
-/*
-handles RSVP functionality 
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: RSVPHandler.java
+
+ * Description: handles RSVP functionality 
 */
 public class RSVPHandler {
 

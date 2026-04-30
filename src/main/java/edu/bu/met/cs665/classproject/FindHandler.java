@@ -2,8 +2,17 @@ package edu.bu.met.cs665.classproject;
 
 import java.util.List;
 
-/*
-handles the searching for study sessions 
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: FindHandler.java
+
+ * Description: handles the searching for study sessions 
 */
 public class FindHandler {
 

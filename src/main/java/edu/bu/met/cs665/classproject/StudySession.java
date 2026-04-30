@@ -3,8 +3,17 @@ package edu.bu.met.cs665.classproject;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-represents a study session with course info and attendees 
+/**
+
+ * Name: Yuting Shi 
+
+ * Course: CS-665 Software Designs & Patterns
+
+ * Date: 04/30/2026
+
+ * File Name: StudySession.java
+
+ * Description: represents a study session with course info and attendees 
  */
 
 public class StudySession {
